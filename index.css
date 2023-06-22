@@ -1,0 +1,295 @@
+* {
+    text-decoration: none;
+    transition: all cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.app {
+    width: 100%;
+}
+
+.heder {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    height: 110px;
+}
+
+.heder_logo {
+    margin-left: 15%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.heder_menu {
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu_ul {
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.menu_li {
+    margin-left: 20px;
+}
+
+.menu_ul .menu_li:hover .menu_small {
+    display: block;
+}
+
+.menu_small {
+    background-color: beige;
+    width: 950px;
+    height: 170px;
+    color: #111010;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    right: 50px;
+    display: none;
+}
+
+.heder_menu>.menu_ul>.menuhove:hover+.menu_small {
+    display: block !important;
+}
+
+.menu_small-ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_small_li {
+    margin-left: 70px;
+    margin-top: 20px
+}
+
+.menu_small_li1 {
+    margin-left: 150px;
+    margin-top: 20px
+}
+
+.text_menu2 {
+    background-color: beige;
+    width: 250px;
+    height: 130px;
+    color: #111010;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    right: 450px;
+    display: none;
+}
+
+.menuhove:hover .text_menu2 {
+    display: block;
+}
+
+.menu2 {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.menu2:hover {
+    margin-left: 55px;
+    color: blue;
+}
+
+.text_menu1 {
+    text-decoration: none;
+    color: #111010;
+}
+
+.text {
+    margin-top: 10px;
+    color: #111010;
+}
+
+.text:hover {
+    margin-left: 3px;
+    color: blue;
+}
+
+.search {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    right: 40px;
+    opacity: 0;
+}
+
+.shopping {
+    background-image: url(./assces/no-cart.png);
+    width: 300px;
+    height: 150px;
+    color: #111010;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    right: 50px;
+    opacity: 0;
+}
+
+.bener {
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.right,
+.left {
+    position: absolute;
+    top: 230px;
+    font-size: 30px;
+    font-weight: bold;
+    background: red;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right {
+    right: 20px;
+}
+
+.left {
+    left: 20px;
+}
+
+.benertow {
+    display: flex;
+    margin: 50px;
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.imglogo {
+    margin-left: 30px;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.active {
+    opacity: 1;
+    ;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.imglogo img:hover {
+    transition: all 4s;
+    transform: scale(1.1);
+}
+
+.colum {
+    margin-left: 7%;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.gift_colum {
+    display: flex;
+}
+
+.row {
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: beige;
+    width: 300px;
+    height: 370px;
+    text-decoration: none;
+}
+
+.nameorprice {
+    margin-left: 80px;
+    color: blue;
+}
+
+.price {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.see {
+    height: 40px;
+    width: 190px;
+    border: #111010 solid 2px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 50px;
+}
+
+.see:hover {
+    background-color: #111010;
+    color: #fff;
+}
+
+.text_see:hover {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.footer_top {
+    display: flex;
+}
+
+.address {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.name_address {
+    margin-left: 10px;
+}
+
+.contact {
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+}
+
+.footer_buttun {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+.media {
+    font-size: 30px;
+    margin-left: 50px;
+}
